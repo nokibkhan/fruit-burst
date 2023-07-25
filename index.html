@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f9775707f6.js" crossorigin="anonymous"></script>
+    <title>Enjoy Your Deal</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <style>
+        .navbar a:hover{
+        background-color: transparent!important;
+        color: white;
+        }
+        .font{
+            font-family: 'Lato', sans-serif;
+        }
+        .navbar a{
+            font-size: 18px;
+        }
+        .bg-black-overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+    }
+    </style>
+</head>
+<body class="font">
+    <header class="container 2xl mx-auto">
+        <div class="navbar bg-base-100 bg-[#F85559] rounded-[100px] text-white py-5 mt-5 lg:px-10">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <div class=" hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="flex gap-8 -mt-3 -ml-8">
+                <a class="btn btn-ghost normal-case "><img  src="images/logo.png" alt=""><span class="text-2xl lg:text-4xl">Fruit Burst</span> </a>
+            </div>
+            
+
+            <div class="navbar-end md:invisible invisible lg:visible">
+             <div class="flex items-center bg-white px-5 py-3 lg:w-[300px] rounded-[25px]">
+                <input class="bg-transparent w-[100%] outline-0 text-black " type="email" placeholder="Search Here">
+                <i class="fa-solid fa-magnifying-glass text-black"></i>
+             </div>
+            </div>
+          </div>
+        </nav>
+
+
+        <div class="slider-main mt-10">
+            <div class="carousel w-full rounded-[10px]">
+                <div id="slide1" class="carousel-item relative  h-[200px] md:h-[400px]  lg:h-[500px] flex justify-center pt-10 pb-5 md:pt-24 lg:pt-24 bg-[url('images/banner1.png')] bg-no-repeat  w-full bg-cover rounded-[10px]">
+                 <div class="content text-center  text-white lg:w-[750px] z-10">
+                    <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold lg:leading-[90px]  lg:px-8">Exotic tastes at your<br> doorstep</h1>
+                    <p class="font-medium text-[16px] md:text-[20px] lg:text-[20px] lg:leading-[40px] py-5 px-16">We supply highly quality organic products</p>
+                    <button class="bg-[#F85559] py-5 px-12 rounded-lg text-[20px] font-extrabold">Shop Now</button>
+                    
+                 </div>
+                 <div class="bg-black-overlay z-1"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative  h-[200px] md:h-[400px]  lg:h-[500px] flex justify-center pt-10 pb-5 md:pt-24 lg:pt-24 bg-[url('images/banner2.png')] bg-no-repeat  w-full bg-cover rounded-[10px]">
+                    <div class="content text-center  text-white lg:w-[750px] z-10">
+                        <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold lg:leading-[90px]  lg:px-8">Exotic tastes at your<br> doorstep</h1>
+                        <p class="font-medium text-[16px] md:text-[20px] lg:text-[20px] lg:leading-[40px] py-5 px-16">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] py-5 px-12 rounded-lg text-[20px] font-extrabold">Shop Now</button>
+                        
+                     </div>
+                     <div class="bg-black-overlay z-1"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative  h-[200px] md:h-[400px]  lg:h-[500px] flex justify-center pt-10 pb-5 md:pt-24 lg:pt-24 bg-[url('images/banner3.png')] bg-no-repeat  w-full bg-cover rounded-[10px]">
+                    <div class="content text-center  text-white lg:w-[750px] z-10">
+                        <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold lg:leading-[90px]  lg:px-8">Exotic tastes at your<br> doorstep</h1>
+                        <p class="font-medium text-[16px] md:text-[20px] lg:text-[20px] lg:leading-[40px] py-5 px-16">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] py-5 px-12 rounded-lg text-[20px] font-extrabold">Shop Now</button>
+                        
+                     </div>
+                     <div class="bg-black-overlay z-1"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative  h-[200px] md:h-[400px]  lg:h-[500px] flex justify-center pt-10 pb-5 md:pt-24 lg:pt-24 bg-[url('images/banner4.png')] bg-no-repeat  w-full bg-cover rounded-[10px]">
+                    <div class="content text-center  text-white lg:w-[750px] z-10">
+                        <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold lg:leading-[90px]  lg:px-8">Exotic tastes at your<br> doorstep</h1>
+                        <p class="font-medium text-[16px] md:text-[20px] lg:text-[20px] lg:leading-[40px] py-5 px-16">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] py-5 px-12 rounded-lg text-[20px] font-extrabold">Shop Now</button>
+                        
+                     </div>
+                     <div class="bg-black-overlay z-1"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
