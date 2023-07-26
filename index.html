@@ -56,26 +56,8 @@
 <body class="font">
   <header class="container 2xl mx-auto">
     <div class="navbar bg-base-100 bg-[#F85559] rounded-[100px] text-white py-5 mt-5 lg:px-10">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
+      <div class="lg:w-[50%]">
+      
         <div class=" hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
@@ -86,18 +68,51 @@
         </div>
 
       </div>
-     <div class="flex gap-8 -mt-3 -ml-8">
+     <div class="flex gap-8 -mt-3 lg:-ml-8 ">
         <a class="btn btn-ghost normal-case "><img src="images/logo.png" alt=""><span class="text-2xl lg:text-4xl">Fruit
             Burst</span> </a>
       </div>
 
 
-      <div class="navbar-end md:invisible invisible lg:visible">
+    
+
+
+
+
+
+
+
+
+
+
+      <div class="navbar-end md:invisible invisible lg:visible w-[100%] lg:w-[50%]">
         <div class="flex items-center bg-white px-5 py-3 lg:w-[300px] rounded-[25px]">
           <input class="bg-transparent w-[100%] outline-0 text-black " type="email" placeholder="Search Here">
           <i class="fa-solid fa-magnifying-glass text-black"></i>
         </div>
       </div>
+
+
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden z-[40]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+  
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[30] p-2 shadow bg-black rounded-box w-[250px] space-y-8  relative right-0" >
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+
+      </div>
+
+
+
+
     </div>
     </nav>
 
